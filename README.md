@@ -1,7 +1,7 @@
-# finance_graphs
+# Finance graphs
 This small program gets the data from the Binance and saves it and plots using Flask
 
-# How to use
+## How to use
 
 1. Install `virtualenv`:
 ```

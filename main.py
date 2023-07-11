@@ -145,7 +145,7 @@ if __name__ == "__main__":
     # print("Server time: ", BinanceSpotMarket().server_time())
     print("Current price for {}: ".format(arguments[1]), BinanceSpotMarket().current_price(arguments[1]))
 
-    data = BinanceSpotMarket().most_recent_market_data(pair=arguments[1], timeframe=arguments[0], n_candles_per_second=arguments[2] if len(arguments)==3 else 1)
+    data = BinanceSpotMarket().most_recent_market_data(pair=arguments[1], timeframe=arguments[0], n_candles_per_second=int(arguments[2]) if len(arguments)==3 else 1)
     print("An example of OHLCV data stored in {}_{}_data .csv and .db files:\n".format(arguments[0], arguments[1]), data.iloc[0])
 
     # Saving the data

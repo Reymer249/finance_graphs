@@ -32,7 +32,13 @@ $ (env) python main.py 1h BTCUSDT 1
 * BTCUSDT - the symbol you want to inspect
 * 1 - number of candles per second; may be omitted, then a default value is 1
 
-The server will start on port 5000 by default. You can change this in `ui.py` by changing the following line to this:
+6. On the pre-last line in the terminal you will see:
+```
+* Running on http://127.0.0.1:5000
+```
+Copy the link and paste it into your browser. You will see the plots.
+
+The server starts on port 5000 by default. You can change this in `ui.py` by changing the following line to this:
 
 ```python
 if __name__ == "__main__":
